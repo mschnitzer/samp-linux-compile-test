@@ -1,0 +1,1 @@
+# samp-linux-compile-test
