@@ -3,6 +3,7 @@
 //#define FILTERSCRIPT
 
 #include <a_samp>
+#include <YSI\y_iterate>
 
 #if defined FILTERSCRIPT
 
