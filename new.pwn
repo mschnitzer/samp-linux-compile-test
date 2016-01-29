@@ -5,6 +5,8 @@
 #include <a_samp>
 #include <YSI\y_iterate>
 
+new Iterator:Test_Iter<50>;
+
 #if defined FILTERSCRIPT
 
 public OnFilterScriptInit()
@@ -36,6 +38,9 @@ public OnGameModeInit()
 	// Don't use these lines if it's a filterscript
 	SetGameModeText("Blank Script");
 	AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0, 0, 0, 0, 0, 0);
+
+  foreach (new i : Test_Iter) { print("bla"); }
+
 	return 1;
 }
 
@@ -64,6 +69,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 public OnPlayerSpawn(playerid)
 {
+  foreach (new i : Player) { printf("%d", i); } 
 	return 1;
 }
 
